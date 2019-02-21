@@ -53,8 +53,8 @@
                                                         <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="84 456 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-OU-PQb">
-                                                        <rect key="frame" x="64" y="8" width="148" height="41"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-OU-PQb">
+                                                        <rect key="frame" x="112" y="8" width="52.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -81,11 +81,14 @@
                                                         <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="148 000 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKK-OL-GdY">
-                                                        <rect key="frame" x="29" y="24" width="85" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKK-OL-GdY">
+                                                        <rect key="frame" x="58" y="24" width="27" height="21"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,17 +103,20 @@
                                                     <constraint firstItem="GKK-OL-GdY" firstAttribute="centerY" secondItem="VUk-6Y-qHO" secondAttribute="centerY" constant="7" id="o7L-0M-2Ja"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$ 6464,54" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjZ-8L-SjP">
-                                                <rect key="frame" x="8" y="8" width="60" height="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$ 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjZ-8L-SjP">
+                                                <rect key="frame" x="8" y="8" width="19" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 5843,65" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-tG-R8r">
-                                                <rect key="frame" x="70" y="8" width="198" height="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-tG-R8r">
+                                                <rect key="frame" x="29" y="8" width="239" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RN2-Wb-HFT" userLabel="ViewExpense">
                                                 <rect key="frame" x="138.5" y="123" width="137.5" height="55"/>
@@ -121,8 +127,8 @@
                                                         <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 000 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-Fi-Qea">
-                                                        <rect key="frame" x="35" y="24" width="75" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-Fi-Qea">
+                                                        <rect key="frame" x="59" y="24" width="27" height="21"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -259,12 +265,22 @@
                         <viewLayoutGuide key="safeArea" id="dzN-F4-3bN"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Qp-20-ayl">
+                        <barButtonItem key="leftBarButtonItem" title="Выход" id="26z-Qa-sf4">
+                            <connections>
+                                <action selector="logautButtonAction:" destination="BIY-oH-L1e" id="bD2-PG-AQQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" id="pm8-Bw-T8h"/>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="r9U-yQ-KMt" id="3eE-SM-yfA"/>
+                        <outlet property="balanceLabel" destination="PC5-OU-PQb" id="n1a-e4-Ndf"/>
+                        <outlet property="costsLabel" destination="7Rh-Fi-Qea" id="vIN-2w-OBG"/>
+                        <outlet property="dollarBalanceLabel" destination="PjZ-8L-SjP" id="jZc-zh-gtF"/>
+                        <outlet property="euroBalanceLabel" destination="pHN-tG-R8r" id="Ge6-ld-7En"/>
                         <outlet property="heightHistoryTableView" destination="cKJ-12-2Xk" id="rGl-z5-sYP"/>
                         <outlet property="historyTableView" destination="otw-iC-Z5h" id="Okq-NT-xdM"/>
+                        <outlet property="incomingsLabel" destination="GKK-OL-GdY" id="oy0-4y-2nV"/>
                         <outlet property="scrollView" destination="2fp-Bc-ZVL" id="Cz3-lY-EPy"/>
                     </connections>
                 </viewController>

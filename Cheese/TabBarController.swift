@@ -22,8 +22,8 @@ class TabBarController: UITabBarController {
         let checks = UIStoryboard(name: "CheckViewController", bundle: nil).instantiateViewController(withIdentifier: "root")
         checks.tabBarItem = UITabBarItem(title: "Чеки", image: UIImage(named: "check"), tag: 1)
         
-        let anim = UIStoryboard(name: "CheckViewController", bundle: nil).instantiateViewController(withIdentifier: "root")
-        anim.tabBarItem = UITabBarItem(title: "Анимация", image: UIImage(named: "check"), tag: 2)
+        let anim = UIStoryboard(name: "IncomingViewController", bundle: nil).instantiateViewController(withIdentifier: "root")
+        anim.tabBarItem = UITabBarItem(title: "Зачисления", image: UIImage(named: "profit"), tag: 2)
         let tabBarList = [general,checks,anim]
         
        

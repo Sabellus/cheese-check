@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DnG-zi-DdI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Incoming View Controller-->
+        <scene sceneID="gRJ-sX-9c6">
+            <objects>
+                <viewController id="DnG-zi-DdI" customClass="CreateIncomingViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2kr-EV-jI8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KHj-Ot-Y2H">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameEditingChange:" destination="DnG-zi-DdI" eventType="editingChanged" id="eXq-Pq-nol"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сумма" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-PL-Wam">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="totalEditingChange:" destination="DnG-zi-DdI" eventType="editingChanged" id="bIR-Qn-aVO"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KHj-Ot-Y2H" firstAttribute="top" secondItem="IC5-rG-w6V" secondAttribute="top" constant="16" id="1dM-bf-5OT"/>
+                            <constraint firstItem="KHj-Ot-Y2H" firstAttribute="leading" secondItem="rmj-PL-Wam" secondAttribute="leading" id="4gQ-qd-F3X"/>
+                            <constraint firstItem="rmj-PL-Wam" firstAttribute="top" secondItem="KHj-Ot-Y2H" secondAttribute="bottom" constant="8" symbolic="YES" id="ON3-PA-gU8"/>
+                            <constraint firstItem="KHj-Ot-Y2H" firstAttribute="trailing" secondItem="rmj-PL-Wam" secondAttribute="trailing" id="URz-7G-onZ"/>
+                            <constraint firstItem="KHj-Ot-Y2H" firstAttribute="trailing" secondItem="2kr-EV-jI8" secondAttribute="trailingMargin" id="cGY-gB-17A"/>
+                            <constraint firstItem="KHj-Ot-Y2H" firstAttribute="leading" secondItem="2kr-EV-jI8" secondAttribute="leadingMargin" id="wle-jn-CrK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IC5-rG-w6V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="87k-cd-Ex2">
+                        <barButtonItem key="rightBarButtonItem" title="Далее" id="0cz-bG-dMV">
+                            <connections>
+                                <action selector="createIncomingAction:" destination="DnG-zi-DdI" id="Yg7-rC-GyU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="KHj-Ot-Y2H" id="FFU-EN-ehW"/>
+                        <outlet property="totalTextField" destination="rmj-PL-Wam" id="lZY-X7-SKc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8q-5a-26g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.125" y="178.52112676056339"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u9K-0O-Ybb">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Check View Controller-->
+        <scene sceneID="KKf-Yl-4dn">
+            <objects>
+                <viewController id="u9K-0O-Ybb" customClass="CreateCheckViewController" customModule="Cheese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgQ-b2-rs2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QwG-5E-MGn">
+                                <rect key="frame" x="16" y="36" width="288" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameEditingChanged:" destination="u9K-0O-Ybb" eventType="editingChanged" id="gt4-vH-KUj"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сумма" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g2U-RA-moA">
+                                <rect key="frame" x="16" y="74" width="288" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="totalEditingChanged:" destination="u9K-0O-Ybb" eventType="editingChanged" id="tux-cg-h5i"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QwG-5E-MGn" firstAttribute="trailing" secondItem="VgQ-b2-rs2" secondAttribute="trailingMargin" id="Cmm-PZ-Ecx"/>
+                            <constraint firstItem="g2U-RA-moA" firstAttribute="top" secondItem="QwG-5E-MGn" secondAttribute="bottom" constant="8" symbolic="YES" id="Dxx-LN-Gd1"/>
+                            <constraint firstItem="QwG-5E-MGn" firstAttribute="leading" secondItem="g2U-RA-moA" secondAttribute="leading" id="TSK-cr-REl"/>
+                            <constraint firstItem="QwG-5E-MGn" firstAttribute="top" secondItem="1Nl-YN-I5r" secondAttribute="top" constant="16" id="aPO-kw-YSx"/>
+                            <constraint firstItem="QwG-5E-MGn" firstAttribute="leading" secondItem="VgQ-b2-rs2" secondAttribute="leadingMargin" id="aih-qT-had"/>
+                            <constraint firstItem="QwG-5E-MGn" firstAttribute="trailing" secondItem="g2U-RA-moA" secondAttribute="trailing" id="nmn-hO-jk5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Nl-YN-I5r"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yfx-Gj-jfq">
+                        <barButtonItem key="rightBarButtonItem" title="Далее" id="oZG-bd-uHg">
+                            <connections>
+                                <action selector="createItemsAction:" destination="u9K-0O-Ybb" id="qi1-B4-QuO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcD-SA-FFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.125" y="178.52112676056339"/>
+        </scene>
+    </scenes>
+</document>
