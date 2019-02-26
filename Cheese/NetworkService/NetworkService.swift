@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 final class NetworkService {
     
-    static let shared = NetworkService(withBaseURL: "http://192.168.1.38:8000/")
+    static let shared = NetworkService(withBaseURL: "https://cheese-check.herokuapp.com/")
     
     let baseURL: String
     init(withBaseURL baseURL: String) {

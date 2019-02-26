@@ -92,6 +92,25 @@
 		4B5B1E2621EE4AFC003D4D62 /* CheckViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckViewController.storyboard; sourceTree = "<group>"; };
 		4B5B1E2821EE4B13003D4D62 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		4B6CD69F21F1003D00DA9F1D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		4B780E7E22259233005765DB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4B780E8022259233005765DB /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		4B780E8122259233005765DB /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		4B780E8222259233005765DB /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		4B780E8322259233005765DB /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		4B780E8422259233005765DB /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4B780E8522259233005765DB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4B780E8622259233005765DB /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		4B780E8722259233005765DB /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		4B780E8822259233005765DB /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		4B780E8922259233005765DB /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		4B780E8A22259233005765DB /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4B780E8B22259233005765DB /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		4B780E8C22259233005765DB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4B780E8D22259233005765DB /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		4B780E8E22259233005765DB /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		4B780E8F22259233005765DB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		4B780E9022259233005765DB /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		4B780E9122259233005765DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4BD5FAA021F0C1870078FE78 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		4BF4BCAE2212611C0094FA29 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		4BF4BCB12212627F0094FA29 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
@@ -279,6 +298,41 @@
 			path = CheckViewController;
 			sourceTree = "<group>";
 		};
+		4B780E7D22259233005765DB /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				4B780E7E22259233005765DB /* LICENSE */,
+				4B780E7F22259233005765DB /* Source */,
+				4B780E9122259233005765DB /* README.md */,
+			);
+			name = Alamofire;
+			path = Pods/Alamofire;
+			sourceTree = "<group>";
+		};
+		4B780E7F22259233005765DB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4B780E8022259233005765DB /* TaskDelegate.swift */,
+				4B780E8122259233005765DB /* MultipartFormData.swift */,
+				4B780E8222259233005765DB /* NetworkReachabilityManager.swift */,
+				4B780E8322259233005765DB /* Timeline.swift */,
+				4B780E8422259233005765DB /* DispatchQueue+Alamofire.swift */,
+				4B780E8522259233005765DB /* Result.swift */,
+				4B780E8622259233005765DB /* ParameterEncoding.swift */,
+				4B780E8722259233005765DB /* AFError.swift */,
+				4B780E8822259233005765DB /* Validation.swift */,
+				4B780E8922259233005765DB /* Notifications.swift */,
+				4B780E8A22259233005765DB /* Response.swift */,
+				4B780E8B22259233005765DB /* Alamofire.swift */,
+				4B780E8C22259233005765DB /* Request.swift */,
+				4B780E8D22259233005765DB /* SessionManager.swift */,
+				4B780E8E22259233005765DB /* ResponseSerialization.swift */,
+				4B780E8F22259233005765DB /* ServerTrustPolicy.swift */,
+				4B780E9022259233005765DB /* SessionDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		4BE4695F21F9185500E75F6A /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +359,7 @@
 		9D2CA8833160B72096A1BBBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B780E7D22259233005765DB /* Alamofire */,
 				D38B4DCAA64B1A9E9E993660 /* Pods_Cheese.framework */,
 			);
 			name = Frameworks;
@@ -407,7 +462,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -422,7 +477,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cheese/Pods-Cheese-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		478FECDAEE2AB247C40B8BA6 /* [CP] Check Pods Manifest.lock */ = {
