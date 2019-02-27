@@ -44,6 +44,9 @@
 		4B5B1E2721EE4AFC003D4D62 /* CheckViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B1E2621EE4AFC003D4D62 /* CheckViewController.storyboard */; };
 		4B5B1E2921EE4B13003D4D62 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B1E2821EE4B13003D4D62 /* CheckViewController.swift */; };
 		4B6CD6A021F1003D00DA9F1D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6CD69F21F1003D00DA9F1D /* HistoryTableViewCell.swift */; };
+		4B9314822225B101008B26DA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9314812225B101008B26DA /* Alamofire.framework */; };
+		4B9314842225B101008B26DA /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9314832225B101008B26DA /* ObjectMapper.framework */; };
+		4B9314862225B101008B26DA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9314852225B101008B26DA /* SwiftyJSON.framework */; };
 		4BD5FAA121F0C1870078FE78 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5FAA021F0C1870078FE78 /* DesignableView.swift */; };
 		4BF4BCAF2212611C0094FA29 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4BCAE2212611C0094FA29 /* Routes.swift */; };
 		4BF4BCB22212627F0094FA29 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4BCB12212627F0094FA29 /* Check.swift */; };
@@ -111,6 +114,9 @@
 		4B780E8F22259233005765DB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		4B780E9022259233005765DB /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 		4B780E9122259233005765DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4B9314812225B101008B26DA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9314832225B101008B26DA /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9314852225B101008B26DA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD5FAA021F0C1870078FE78 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		4BF4BCAE2212611C0094FA29 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		4BF4BCB12212627F0094FA29 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9314822225B101008B26DA /* Alamofire.framework in Frameworks */,
+				4B9314842225B101008B26DA /* ObjectMapper.framework in Frameworks */,
+				4B9314862225B101008B26DA /* SwiftyJSON.framework in Frameworks */,
 				F383E9B991D51AD81D090AC8 /* Pods_Cheese.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +368,9 @@
 		9D2CA8833160B72096A1BBBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B9314812225B101008B26DA /* Alamofire.framework */,
+				4B9314832225B101008B26DA /* ObjectMapper.framework */,
+				4B9314852225B101008B26DA /* SwiftyJSON.framework */,
 				4B780E7D22259233005765DB /* Alamofire */,
 				D38B4DCAA64B1A9E9E993660 /* Pods_Cheese.framework */,
 			);
@@ -386,6 +398,7 @@
 				4B5B1E0921EE3D26003D4D62 /* Frameworks */,
 				4B5B1E0A21EE3D26003D4D62 /* Resources */,
 				009A89E0D618AB3014E967BF /* [CP] Embed Pods Frameworks */,
+				4B780E922225A84D005765DB /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -501,6 +514,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4B780E922225A84D005765DB /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 90e49c8137ba34724d502f3adf25ecf426b3e335 7e4b9824a65f0e90c53db39b4dda96d2a8b8dadc0a78d756b36d12885311ebed\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

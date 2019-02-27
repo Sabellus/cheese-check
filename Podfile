@@ -8,6 +8,8 @@ target 'Cheese' do
   pod 'Alamofire'
   pod 'SwiftyJSON', '~> 4.0' 
   pod 'ObjectMapper'
+  pod 'AppCenter'
+
   # Pods for Cheese
 
 end
